@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
+import { Container } from '@material-ui/core';
 
 import { useTranslation } from 'react-i18next';
 
@@ -29,7 +30,9 @@ export function App() {
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
       <NavigationBar />
-      <Routes />
+      <Container>
+        <Routes />
+      </Container>
       <GlobalStyle />
     </BrowserRouter>
   );
