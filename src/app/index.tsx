@@ -11,12 +11,11 @@ import { Helmet } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
-import { Container } from '@material-ui/core';
 
 import { useTranslation } from 'react-i18next';
 
 import Routes from './routes';
-import NavigationBar from './components/navigation-bar';
+import MainLayout from './layouts/main-layout';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -29,9 +28,9 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-      <Container>
+      <MainLayout>
         <Routes />
-      </Container>
+      </MainLayout>
       <GlobalStyle />
     </BrowserRouter>
   );
