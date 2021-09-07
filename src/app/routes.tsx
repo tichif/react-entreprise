@@ -6,8 +6,6 @@ import Home from './views/pages/Home';
 // import About from './views/pages/About';
 import NotFoundPage from './pages/NotFoundPage';
 import Dashboard from './layouts/dashboard-layout';
-// import DashboardDefaultContent from './views/dashboard/dashboard-default-content';
-// import SettingsAndPrivacy from './views/dashboard/settings-and-privacy';
 
 const Routes = () => {
   return (
@@ -35,9 +33,16 @@ const Routes = () => {
                 />
                 <Route
                   exact
-                  path={path + '/settings-and-privacy'}
+                  path={path + '/list-products'}
                   component={lazy(
-                    () => import('./views/dashboard/settings-and-privacy'),
+                    () => import('./views/dashboard/product/ProductListView'),
+                  )}
+                />
+                <Route
+                  exact
+                  path={path + '/create-product'}
+                  component={lazy(
+                    () => import('./views/dashboard/product/ProductCreateView'),
                   )}
                 />
               </Switch>
