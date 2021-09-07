@@ -81,7 +81,8 @@
     "generate": "cross-env TS_NODE_PROJECT='./internals/ts-node.tsconfig.json' plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "backend": "json-server --watch db.json --port 5000 --delay=1000"
   },
   "browserslist": {
     "production": [
@@ -124,5 +125,11 @@
         "statements": 90
       }
     }
+  },
+  "devDependencies": {
+    "concurrently": "6.2.1",
+    "cypress": "8.3.1",
+    "json-server": "0.16.3",
+    "json-server-auth": "2.1.0"
   }
 }
