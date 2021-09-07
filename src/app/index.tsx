@@ -29,7 +29,6 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-      <NavigationBar />
       <Container>
         <Routes />
       </Container>
