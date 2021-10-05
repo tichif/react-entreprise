@@ -419,15 +419,15 @@ const Results = ({ className, products, ...rest }: Props) => {
               })}
             </TableBody>
           </Table>
-          {/* <TablePagination
-           component="div"
-           count={filteredProducts.length}
-           onChangePage={handlePageChange}
-           onChangeRowsPerPage={handleLimitChange}
-           page={page}
-           rowsPerPage={limit}
-           rowsPerPageOptions={[5, 10, 25]}
-          /> */}
+          <TablePagination
+            component="div"
+            count={filteredProducts.length}
+            onPageChange={handlePageChange}
+            onChangeRowsPerPage={handleLimitChange}
+            page={page}
+            rowsPerPage={limit}
+            rowsPerPageOptions={[5, 10, 25]}
+          />
         </Box>
       </PerfectScrollbar>
     </Card>
