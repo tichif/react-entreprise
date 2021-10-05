@@ -15,8 +15,8 @@ import {
   PlusCircle as PlusCircleIcon,
   Download as DownloadIcon,
   Upload as UploadIcon,
-  Navigation as NavigationIcon,
 } from 'react-feather';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 type Props = {
   className?: string;
@@ -44,7 +44,7 @@ const Header = ({ className, ...rest }: Props) => {
     >
       <Grid item>
         <Breadcrumbs
-          separator={<NavigationIcon fontSize="small" />}
+          separator={<NavigateNextIcon fontSize="small" />}
           aria-label="breadcrumb"
         >
           <Link

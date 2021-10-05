@@ -3,16 +3,25 @@ import { makeStyles, Container } from '@material-ui/core';
 
 import Header from './Header';
 import ProductCreateForm from './ProductCreateForm';
+import Page from 'app/components/page';
 
-const useStyle = makeStyles(theme => ({}));
+const useStyle = makeStyles(theme => ({
+  root: {
+    minHeight: '100%',
+    paddingTop: theme.spacing(3),
+    paddingBottom: 100,
+  },
+}));
 
 const ProductCreateView = () => {
   const classes = useStyle();
   return (
-    <Container>
-      <Header />
-      <ProductCreateForm />
-    </Container>
+    <Page className={classes.root} title="Product Create">
+      <Container>
+        <Header />
+        <ProductCreateForm />
+      </Container>
+    </Page>
   );
 };
 
