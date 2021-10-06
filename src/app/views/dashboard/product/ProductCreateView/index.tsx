@@ -17,7 +17,7 @@ const ProductCreateView = () => {
   const classes = useStyle();
   return (
     <Page className={classes.root} title="Product Create">
-      <Container>
+      <Container maxWidth="lg">
         <Header />
         <ProductCreateForm />
       </Container>
