@@ -22,6 +22,7 @@ import {
   List as ListIcon,
   FilePlus as FilePlusIcon,
   LogOut as LogOutIcon,
+  Calendar as CalendarIcon,
 } from 'react-feather';
 
 const drawerWidth = 240;
@@ -110,6 +111,16 @@ const DashboardSidebarNavigation = () => {
               <ListItemText primary={'Products'} />
               {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
             </ListItem>
+
+            <ListSubheader>Calendar</ListSubheader>
+            <Link className={classes.link} to={`${url}/calendar`}>
+              <ListItem button>
+                <ListItemIcon>
+                  <CalendarIcon />
+                </ListItemIcon>
+                <ListItemText primary={'Calendar'} />
+              </ListItem>
+            </Link>
 
             <Collapse in={open} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
