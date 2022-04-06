@@ -171,6 +171,24 @@
       "end": "2022-04-06T01:32:59.887Z",
       "start": "2022-04-06T01:02:59.888Z",
       "id": "Tjiwek2"
+    },
+    {
+      "allDay": true,
+      "title": "Live coding session",
+      "description": "Live coding on the web",
+      "end": "2022-05-06T02:15:00.000Z",
+      "start": "2022-04-06T13:00:00.000Z",
+      "id": "8GAJ-XI"
+    }
+  ],
+  "users": [
+    {
+      "id": "7fguyfte5",
+      "email": "demo@acme.io",
+      "password": "$2a$10$Pmk32D/fgkig8pU.r1rGrOpYYJSrnqqpLO6dRdo88iYxxIsl1sstC",
+      "name": "Mok Kuh",
+      "mobile": "+34782364823",
+      "policy": true
     }
   ]
 }
